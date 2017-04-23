@@ -30,7 +30,7 @@
 
     <main class="twelve columns">
 
-    <!-- Side Scroll Images Based on this Tutorial -->
+    <!-- Side Scroll Images Based on this Tutorial: https://css-tricks.com/how-to-create-a-horizontally-scrolling-site/ -->
 
       <table> 
         <tr>
@@ -41,8 +41,7 @@
                 /* OUR DATA CONTEXT IS DEFINED 	*/
                 the_post(); ?>
 
-                <h2><?php the_title(); ?></h2>
-                <?php the_content();
+                <?php the_post_thumbnail('medium'); ?>
               }
             } ?>
             <!-- End Loop -->

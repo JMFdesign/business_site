@@ -1,33 +1,35 @@
 <style type="text/css">
 
-	* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	}
+	@import url('http://www.memoriesbyjmf.com/nateshonor/wp-content/themes/business-site-jessica-arnieri-hernandez/stylesheets/normalize.css');
+	@import url('http://www.memoriesbyjmf.com/nateshonor/wp-content/themes/business-site-jessica-arnieri-hernandez/stylesheets/skeleton.css');
 
-	/* HTML5 compatibility */
-	article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {    
-		display:block;
+	/* --- Fonts --- */
+
+	@font-face {
+	    font-family: 'amatic';
+	    src: url('fonts/amatic.ttf') format('truetype');
 	}
 
 	@font-face {
-		font-family: 'gothic';
-		src: url('../fonts/gothic.ttf') format('truetype');
+	    font-family: 'geo';
+	    src: url('fonts/geo.ttf') format('truetype');
 	}
 
 	@font-face {
-		font-family: 'gothicb';
-		src: url('../fonts/gothicb.ttf') format('truetype');
+	    font-family: 'hugs';
+	    src: url('fonts/hugs.ttf') format('truetype');
 	}
 
-	@font-face {
-		font-family: 'folks';
-		src: url('../fonts/folks.ttf') format('truetype');
+	/* --- General Formatting --- */
+
+	*{
+		color: #000000;
+		font-size: 14px;
+		line-height: 16px;
 	}
 
-	body {
-		background-color: #ffffff;
+	html {
+	  width: 100vw;
 	}
 
 	#container {
@@ -42,7 +44,6 @@
 		width: 900px;
 		height: 400px;
 		padding: 20px;
-		background-image: url('../images/frm.png');
 		background-repeat: no-repeat;
 		margin: auto;
 		margin-top: 100px;
@@ -64,12 +65,12 @@
 	    clear: both;
 	    width: 525px;
 	    background-color: hsla(243, 71%, 74%, 0.42);
-	    font-family: 'gothic', sans-serif;
+	    font-family: 'geo', sans-serif;
 	}
 
 	h3 {
 		padding: 10px;
-		font-family: 'folks', cursive;
+		font-family: 'amatic', cursive;
 		font-style: normal;
 		font-size: 25px;
 		text-align: center;
@@ -81,7 +82,7 @@
 		padding: 10px 105px;
 		margin-top: 10px;
 		text-align: center;
-		font-family: 'gothic', sans-serif;
+		font-family: 'geo', sans-serif;
 		font-size: 18px;
 	    color:#333333;
 	    display:block;

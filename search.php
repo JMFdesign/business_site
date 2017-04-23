@@ -49,6 +49,7 @@
       <?php endif;
       ?>
     </main>
+
     <?php get_footer(); ?>
-  </div>
+ 
   <!-- End Search Content -->
