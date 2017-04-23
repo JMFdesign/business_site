@@ -150,6 +150,7 @@ header #large_logo {
 main {
   width: 100%;
   padding: 0 -10%;
+  max-height: 45vh;
 }
 
 main h1 {
@@ -508,10 +509,24 @@ img {
 
 /* --- Single and Page --- */
 
+table {
+  margin: auto;
+}
 
+tr { 
+  vertical-align: top;
+}
 
-/* --- Search --- */
+td {
+  margin-left: 1%;
+  margin-right: 1%;
+  -webkit-box-shadow: 0 5px 5px 10px hsla(0, 0%, 17%, 0.24);
+  box-shadow: 0 5px 5px 10px hsla(0, 0%, 17%, 0.24);
+}
 
+.post { 
+  width: 500px; 
+}
 
 /* --- Footer --- */
 

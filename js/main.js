@@ -1,10 +1,12 @@
-// Index
+// Homepage Responsive Background Image
 
 $(document).ready(function () {
 
 	$.backstretch("http://memoriesbyjmf.com/nateshonor/wp-content/uploads/2017/04/dog_adoption.png");
 
 });
+
+// Homepage Hamburger Menu Hover Effect
 
 $(document).ready(function () {
 
@@ -30,7 +32,7 @@ $(document).ready(function () {
 
 });
 
-/* --- Open and Close Menu --- */
+// Open and Close Hamburger Menu
 
 $(document).ready(function () {
 
@@ -57,10 +59,14 @@ $(document).ready(function () {
 
 });
 
-// Blog Home
+// Side Scroll Images Based on this Tutorial: https://css-tricks.com/how-to-create-a-horizontally-scrolling-site/
 
 $(document).ready(function () {
 
-	$.backstretch("http://www.memoriesbyjmf.com/nateshonor/wp-content/themes/business-site-jessica-arnieri-hernandez/images/dog_adoption.png");
+	$(function() {
+		$("#page-wrap").wrapInner("<table cellspacing='20'><tr>");
+		$(".post").wrap("<td>");
+	});
 
 });
+
