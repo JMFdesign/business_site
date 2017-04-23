@@ -1,0 +1,547 @@
+/*
+Theme Name: Jessica Arnieri Hernandez Final Project
+Theme URI:
+Author: Jessica Arnieri Hernandez
+Description: Business Site for WIE course
+Version: 0.1
+License: Open
+Text Domain: jessica_arnieri_hernandez_business_site
+*/
+
+@import url('http://www.memoriesbyjmf.com/nateshonor/wp-content/themes/business-site-jessica-arnieri-hernandez/stylesheets/normalize.css');
+@import url('http://www.memoriesbyjmf.com/nateshonor/wp-content/themes/business-site-jessica-arnieri-hernandez/stylesheets/skeleton.css');
+
+/* --- Fonts --- */
+
+@font-face {
+    font-family: 'amatic';
+    src: url('fonts/amatic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url('fonts/geo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hugs';
+    src: url('fonts/hugs.ttf') format('truetype');
+}
+
+/* --- General Formatting --- */
+
+*{
+	color: #000000;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+}
+
+h1 {
+  font-size: 7rem;
+  text-align: center;
+  font-family: 'hugs', sans-serif;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-family: 'amatic', sans-serif;
+  text-align: center;
+  color: #a64e9c;
+  color: #ffffff;
+}
+
+h3 {/*metabox headings*/
+  font-size: 1.5rem;
+  font-family: 'geo', sans-serif;
+  color: #ff33cc;
+}
+
+p {
+  font-family: 'geo', sans-serif;
+  color: white;
+}
+
+a {
+  color: #005cb1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00cc33;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fad529;
+  text-decoration: underline;
+}
+
+.row {
+  width: 100%;
+  margin: 2% 0;
+  padding: 0 1%;
+}
+
+/* --- Background Colors --- */
+
+#pink_background {
+  background-color: #ff33cc;
+}
+
+#blue_background {
+  background-color: #005cb1;
+}
+
+
+/* --- Header --- */
+
+header {
+  width: 100%;
+  display: block;
+}
+
+header h1 {
+  width: 40%;
+  margin-right: 0;
+  display: inline-block;
+  font-size: 6rem;
+}
+
+#single {
+  width: 40%;
+  margin-right: 0;
+  display: inline-block;
+  font-size: 6rem;
+}
+
+header a img {
+  width: 10%;
+  height: auto;
+}
+
+header #social_media {
+  text-align: right;
+  display: inline-block;
+  width: 40%;
+}
+
+header #large_logo {
+  margin: 0 1%;
+  max-width: 125px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* --- Index --- */
+
+#title_block {
+  margin-left: -45%;
+}
+
+main {
+  min-height: 90vh;
+}
+
+main h1 {
+  font-size: 15rem;
+  text-align: center;
+  font-family: 'hugs', sans-serif;
+  text-transform: lowercase;
+  padding-top: 15%;
+  color: #ffffff;
+}
+
+#hamburger,
+#close_menu {
+  top: 2%;
+  left: 5%;
+  z-index: 10;
+  background-color: transparent;
+}
+
+#hamburger img,
+#close_menu img {
+  margin-bottom: 0.5%;
+  display: block;
+  width: 100%;
+  max-width: 50px;
+}
+
+#hamburger p {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 50px;
+  font-size: 3rem;
+  margin-left: 5%;
+}
+
+#top_line,
+#middle_line,
+#bottom_line {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.top_line_hover {
+  -moz-animation: animate_top 0.5s linear;
+  -webkit-animation: animate_top 0.5s linear;
+  animation: animate_top 0.5s linear;
+
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-moz-keyframes animate_top {
+  from { margin-top: 0%; transform: rotate(0deg);  }
+  to { margin-top: 4.5%; transform: rotate(45deg); }
+}
+
+@-webkit-keyframes animate_top {
+  from { margin-top: 0%; transform: rotate(0deg);  }
+  to { margin-top: 4.5%; transform: rotate(45deg); }
+}
+
+@keyframes animate_top {
+  from { margin-top: 0%; transform: rotate(0deg);  }
+  to { margin-top: 4.5%; transform: rotate(45deg); }
+}
+
+.middle_line_hover {
+  visibility: hidden;
+}
+
+.bottom_line_hover {
+-moz-animation: animate_bottom 0.5s linear;
+  -webkit-animation: animate_bottom 0.5s linear;
+  animation: animate_bottom 0.5s linear;
+
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-moz-keyframes animate_bottom {
+  from { margin-top: 0%; transform: rotate(0deg);  }
+  to { margin-top: -4.5%; transform: rotate(-45deg); }
+}
+
+@-webkit-keyframes animate_bottom {
+  from { margin-top: 0%; transform: rotate(0deg);  }
+  to { margin-top: -4.5%; transform: rotate(-45deg); }
+}
+
+@keyframes animate_bottom {
+  from { margin-top: 0%; transform: rotate(0deg);  }
+  to { margin-top: -4.5%; transform: rotate(-45deg); }
+}
+
+#close_menu {
+  margin-left: 5%;
+}
+
+#left_line {
+  margin-top: 4.75%;
+  transform: rotate(45deg);
+}
+
+#right_line {
+  margin-top: -4.75%;
+  transform: rotate(-45deg);
+}
+
+#hidden_menu {
+  z-index: 5;
+  position: relative;
+  margin-left: -100%;
+  background-color: hsla(0, 100%, 100%, 0.75);
+}
+
+#hidden_menu nav {
+  margin-left: 10%;
+  margin-top: 7%;
+
+}
+
+#hidden_menu nav ul {
+  margin-top: 20%;
+}
+
+#hidden_menu nav ul li{
+  margin-bottom: 10%;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#hidden_menu nav ul li a {
+  font-family: 'hugs', sans-serif;
+  font-size: 5rem;
+  text-transform: lowercase;
+}
+
+#hidden_menu nav ul li a:hover {
+
+}
+
+.pdf {
+  font-family: 'hugs', sans-serif;
+  font-size: 3rem;
+  text-transform: lowercase;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#logo_coin {
+  width: 100%;
+  margin: auto;
+}
+
+#large_logo {
+  width: 20%;
+  height: auto;
+  max-width: 300px;
+  margin: 0 35%;
+  text-align: center;
+}
+
+#title_block {
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
+}
+
+.hide_it_all {
+  display: hidden;
+}
+
+/* --- Call to Action --- */
+
+#call_to_action {
+  margin: 10% 20%;
+}
+
+footer form {
+  margin-top: 3%;
+}
+
+input {
+  font-family: 'amatic', sans-serif;
+  font-weight: bolder;
+  color: #ff33cc;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#email_input {
+  display: inline-block;
+  width: 35%;
+  margin-left: 5%;
+}
+
+
+#email_input_home {
+  display: block;
+  width: 100%;
+}
+
+#email_input_home::after {
+  content: url('images/hearts.png');
+
+}
+
+input[type="submit"] {
+  background-color: #ff33cc;
+  color: #ffffff;
+  font-family: 'amatic', sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  width: 55%;
+  margin-left: 2%;
+  transform: scale(1,1);
+  transition-duration: 0.5s;
+}
+
+input#submit_home {
+  background-color: #005cb1;
+  color: #ffffff;
+  font-family: 'amatic', sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  width: 100%;
+  margin-left: 0;
+  transform: scale(1,1);
+  transition-duration: 0.5s;
+}
+
+input[type="submit"]:hover,
+input#submit_home:hover {
+ transform: scale(1.1,1.1);
+ transition-duration: 0.5s;
+ color: #ffffff;
+}
+
+/* --- Social Media --- */
+
+#social_media {
+  margin: auto;
+}
+
+#social_media ul {
+  display: block;
+  width: 25%;
+  text-decoration: none;
+}
+
+#social_media ul li {
+  display: inline-block;
+  width: 20%;
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+#social_media a,
+#social_media a:hover {
+  text-decoration: none;
+}
+
+#social_media a img{
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition-duration: 1s;
+  -moz-filter: invert(0%);
+  -webkit-filter: invert(0%);
+  filter: invert(0%);
+  text-decoration: none;
+}
+
+#social_media a img:hover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition-duration: 1s;
+  -moz-filter: invert(100%);
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  text-decoration: none;
+}
+
+#social_media a img {
+  width: 20%;
+  height: auto;
+  max-width: 75px;
+  min-width: 40px;
+  margin-right: 5%;
+  max-width: 53px;
+}
+
+/* --- Sidebar --- */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#logo {
+  background-image: url('images/logo.jpg');
+  width: 100%;
+  height: auto;
+}
+
+.side_bar {
+  padding: 0 20px;
+}
+
+.side_bar h3 {
+  text-align: center;
+  align: center;
+  font-size: 2.0rem;
+  color: #a64e9c;
+  padding: 20px 0 0 0;
+}
+
+.side_bar h2 a,{
+  font-size: 2.0rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#spring a {
+  font-size: 2.0rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#spring {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 20px 0;
+}
+
+#wp-calendar {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Single and Page --- */
+
+
+
+/* --- Search --- */
+
+
+/* --- Footer --- */
+
+.inner_row {
+  margin: -2%;
+  padding: 0 -2%; 
+}
+
+footer {
+  margin: 20px -20px 0 -20px;
+  padding: 20px 0;
+  background-color: transparent;
+}
+
+footer ul,
+footer ul li {
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer ul li a {
+  font-family: 'amatic', sans-serif;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+.add_paw::after {
+  content: url('http://www.memoriesbyjmf.com/nateshonor/wp-content/themes/business-site-jessica-arnieri-hernandez/images/single_paw.png');
+  padding: 0 0.5%;
+  vertical-align: sub;
+  width: 10%;
+}
