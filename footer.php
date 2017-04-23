@@ -1,6 +1,6 @@
 
 
-    <footer class="inner_row">
+    <footer>
     	
       <div class="eight columns">
         <ul>
